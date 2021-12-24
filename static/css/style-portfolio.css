@@ -1,0 +1,69 @@
+body{
+    margin: 0px;
+    padding: 0px;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+footer div a{
+    text-decoration: none;
+}
+
+.nav-style {
+    border-radius: 2px;
+    margin: 0px;
+    background: linear-gradient(to right, #531799 15%, #3700cf 100%)
+}
+
+.footer-style {
+    border-radius: 2px;
+    margin: 0px;
+    background: #e3e3e6;
+    text-decoration: none;
+}
+
+
+.one-page {
+    width: 100%;
+    min-height: 100vh;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+
+}
+
+#sobre, #projeto {
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-attachment: fixed;
+    background-size: cover;
+}
+
+#sobre {
+    background-image: url('../img/fundo_sobre.png');
+}
+
+#projeto {
+    background-image: url('../img/fundo_projeto.png');
+}
+
+#contato {
+    background: steelblue;
+}
+
+#home{
+    background: seagreen;
+}
+
+.t-shadow {
+    text-shadow: 1px 1px 2px rgba(34, 34, 34, 0.800)
+}
+
+.img-size {
+    width: 150px;
+    height: auto;
+    max-width: 160px;
+    min-width: 25%;
+}

@@ -1,0 +1,144 @@
+{% extends 'layout.html'%}}
+
+
+{% block content %}
+
+<section class="one-page" id="sobre">
+    <div class="px-4 py-4 my-5 text-left text-light font-weight-bold t-shadow">
+        <div class="d-flex justify-content-center">
+            <div class="col-md-12">
+                <img src="{{ url_for('static', filename='img/me.jpg') }}"
+                    class="img-size img-thumbnail rounded rounded-circle mx-auto d-block" alt="">
+                <div class="mt-1">
+                    <p>
+                        Olá, meu nome é Ygor Guilherme sou entusiasta e estudante de
+                        desenvolvimento web, meu primeiro contato com tecnologia foi em 2009 quando uma
+                        amiga me fez uma conta no orkut.
+                        Não sabia como utilizar, em muita das vezes eu logava na conta e saindo sem ao
+                        menos fazer algo.
+                        Porém em frente aquela tela perguntava-me como seria por trás de tudo aquilo,
+                        como seria feito.
+                    </p>
+
+                    <div class="d-none" id="readme">
+                        <p>
+                            Com o tempo eu comecei a utilizar de ferramentas como youtube,
+                            forums, blogs e ate o proprio orkut.
+                            Para aprender como aquele mundo maravilhoso era criado, infelizmente foi um
+                            processo lento, o conteudo era escasso ou só existia em outro idioma.
+                            Também não me disponibilizava de um computador ou internet, somente em lan house
+                            ou na casa de um amigo.
+                            O tempo se passou e eu criei um blog de musicas aonde se tinha acesso para baixa
+                            e ter informações sobre banda de rock e seu sub-genero.
+                        </p>
+                        <p>
+                            Em 2013 ganhei meu primeiro computador aparti deste momento o meu mundo se
+                            expandiu, eram muitas opções um mundo amplo, ainda mais conheci e comecei a
+                            utilizar um sistema operacional incrivel o tal "pinquim", era um mundo
+                            totalmente
+                            diferente a maioria das coisas se fazia atraves de um telinha prenta e letras
+                            branca, no ano de 2014 fiz um curso de "montagem e manutenção de
+                            micro-computadores",
+                            não parei por ai, em 2018 conheci minha outra paixão
+                            uma linguagem de programção python aonde fiz dois curso de python para
+                            desenvolvimento web
+                            e venho cada vez mais aprendendo e me aperfeiçoando na area de desenvolvimento
+                            web.
+                        </p>
+                    </div>
+
+                    <button class="btn btn-primary" id="btn-readme" onclick="readme()">Leia-me</button>
+
+                </div>
+
+            </div>
+        </div>
+    </div>
+</section>
+
+<hr class="bg-light" style="height: 15px; margin:0px 0px; border-width:0;">
+
+<section class="one-page" id="projeto">
+    <div class="px-4 py-4 my-5 text-left text-light font-weight-bold t-shadow">
+        <div class="row">
+            <div class="d-flex justify-content-center mb-2 col-sm-12 col-md-6 col-xl-4">
+                <div class="card bg-light bg-opacity-25 w-auto">
+                    <div class="card-body">
+                        <div class="d-flex justify-content-center">
+                            <img src="{{ url_for('static', filename='img/img.jpg') }}" alt=""
+                                class="card-img-top mb-2 border border-3 rounded" style="max-width: 450px;">
+                        </div>
+
+
+                        <h5 class="card-title">Projeto 1</h5>
+                        <p class="card-text">
+                            It has survived not only five centuries, but also the leap into electronic
+                            typesetting,
+                            remaining essentially unchanged. It was popularised in the 1960s with the
+                            release of
+                            Letraset sheets containing Lorem Ipsum passages, and more recently with
+                            desktop publishing
+                            software like Aldus PageMaker including versions of Lorem Ipsum.
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="d-flex justify-content-center mb-2 col-sm-12 col-md-6 col-xl-4">
+                <div class="card bg-light bg-opacity-25 w-auto">
+                    <div class="card-body">
+
+                        <div class="d-flex justify-content-center">
+                            <img src="{{ url_for('static', filename='img/img.jpg') }}" alt=""
+                                class="card-img-top mb-2 border border-3 rounded" style="max-width: 450px;">
+                        </div>
+
+                        <h5 class="card-title">Projeto 2</h5>
+                        <p class="card-text">
+                            It has survived not only five centuries, but also the leap into electronic
+                            typesetting,
+                            remaining essentially unchanged. It was popularised in the 1960s with the
+                            release of
+                            Letraset sheets containing Lorem Ipsum passages, and more recently with
+                            desktop publishing
+                            software like Aldus PageMaker including versions of Lorem Ipsum.
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="d-flex justify-content-center mb-2 col-lg-4 d-none d-xl-block">
+                <div class="card bg-light bg-opacity-25 w-auto">
+                    <div class="card-body">
+
+                        <div class="d-flex justify-content-center">
+                            <img src="{{ url_for('static', filename='img/img.jpg') }}" alt=""
+                                class="card-img-top mb-2 border border-3 rounded" style="max-width: 450px;">
+                        </div>
+
+                        <h5 class="card-title">Projeto 3</h5>
+                        <p class="card-text">
+                            It has survived not only five centuries, but also the leap into electronic
+                            typesetting,
+                            remaining essentially unchanged. It was popularised in the 1960s with the
+                            release of
+                            Letraset sheets containing Lorem Ipsum passages, and more recently with
+                            desktop publishing
+                            software like Aldus PageMaker including versions of Lorem Ipsum.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<hr class="bg-light" style="height: 15px; margin:0px 0px;border-width:0; color:gray;">
+
+<section class="one-page" id="contato">
+    <div class="px-4 py-4 my-5 text-left text-light font-weight-bold t-shadow">
+        Contato
+    </div>
+</section>
+
+{% endblock %}
